@@ -1,0 +1,627 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar الأساسي */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #b19cd9; /* بنفسجي فاتح */
+  color: white;
+  font-family: sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* الشعار */
+nav .logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+}
+
+/* روابط الـ Navbar */
+nav .btns a {
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 16px;
+  color: white; /* خط أبيض */
+  transition: 0.3s;
+}
+
+nav .btns a:hover {
+  color: #333; /* يتحول أسود عند Hover */
+}
+
+/* زر الموبايل */
+nav .btns-mobile {
+  display: none; /* يظهر فقط بالموبايل */
+}
+
+nav .btns-mobile button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+/* Main Section */
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: #fdfdfd;
+  font-family: sans-serif;
+  gap: 40px;
+  flex-wrap: wrap; /* يجعلها متجاوبة تلقائي */
+}
+
+/* النص */
+.main-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.main-text h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.main-subtext p {
+  font-size: 25px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* زر Shop Now */
+.main-subtext button {
+  padding: 12px 30px;
+  font-size: 18px;
+  background-color: #b19cd9; /* بنفسجي فاتح */
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.main-subtext button:hover {
+  transform: scale(1.05);
+  background-color: #9f7fd8; /* ظل أغمق عند Hover */
+}
+
+/* الصورة */
+.main-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  min-width: 280px;
+}
+
+.main-image .product {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main-image .product:hover {
+  transform: scale(1.08);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+  .new-arrivals {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fdfdfd;
+  font-family: sans-serif;
+}
+
+.new-arrivals h2 {
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+
+/* Grid للكارتات */
+.new-arrival-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* الكارت */
+.new-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.new-item:hover {
+  transform: scale(1.07);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+/* الصورة */
+.new-item img {
+  width: 140px;
+  max-width: 100%;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.new-item img:hover {
+  transform: scale(1.1);
+}
+
+/* اسم المنتج */
+.new-item h3 {
+  font-size: 20px;
+  margin: 8px 0;
+}
+
+/* السعر */
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+/* ===== New Look Section ===== */
+.new-look {
+  background: #f6f2fb; /* بنفسجي ناعم */
+  padding: 80px 20px;
+}
+
+.new-look-content {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+/* النص */
+.new-look-text {
+  flex: 1;
+}
+
+.new-look-text h2 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.new-look-text p {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.new-look-text a {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #7c5cff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.new-look-text a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 25px rgba(124,92,255,0.4);
+}
+
+/* الصور */
+.new-look-images {
+  flex: 1;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.new-look-images img {
+  width: 180px;
+  border-radius: 25px;
+  transform: rotate(-4deg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.new-look-images img:nth-child(2) {
+  transform: rotate(3deg);
+}
+
+/* Hover على الصور */
+.new-look-images img:hover {
+  transform: scale(1.15) rotate(0deg);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+
+.latest {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.latest h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.latest-desc {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+/* Grid للكارتات */
+.latest-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+/* الكارت */
+.product-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 25px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.product-card img {
+  width: 150px;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.price {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.rating {
+  color: gold;
+  font-size: 18px;
+}
+
+/* ✨ Hover effect */
+.product-card:hover {
+  transform: scale(1.07);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.15);
+}
+
+/* صورة المستخدم */
+.testimonial-user img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #ddd;
+}
+.testimonials {
+  background-color: #f9f9f9; /* خلفية ناعمة */
+  padding: 60px 20px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.testimonials h2 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.test-desc {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Grid للكروت */
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* الكارت */
+.testimonial-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Hover effect للكارت */
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* الصورة */
+.testimonial-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ddd;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card img:hover {
+  transform: scale(1.2);
+}
+
+.testimonial-card h4 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.rating {
+  color: gold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.comment {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.4;
+}
+
+footer {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.959);
+  color: white;
+  padding: 40px 20px;
+  font-family: sans-serif;
+}
+
+footer .logo {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* الروابط */
+footer nav {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap; /* يخلي الروابط تنتقل لسطر ثاني بالموبايل */
+  justify-content: center;
+  gap: 15px;
+}
+
+footer nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+footer nav a:hover {
+  color: #ff6600;
+}
+
+/* الشروط */
+footer .terms {
+  margin-top: 20px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+footer .terms a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .terms a:hover {
+  color: #ff6600;
+}
+
+
+@media (max-width: 800px) {
+  nav {
+    padding: 10px 20px;
+  }
+
+  nav .btns {
+    display: none; /* نخفي الروابط الكبيرة */
+    flex-direction: column;
+    background-color: #b19cd9;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    gap: 15px;
+    padding: 15px 0;
+  }
+
+  nav .btns a {
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+  }
+
+  nav .btns-mobile {
+    display: block; /*يظهر زر */
+  }
+}
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 15px;
+  }
+
+  .main-text h1 {
+    font-size: 32px;
+  }
+
+  .main-subtext p {
+    font-size: 18px;
+  }
+
+  .main-subtext button {
+    font-size: 16px;
+    padding: 10px 25px;
+  }
+
+  .main-image .product {
+    width: 200px;
+    margin-top: 20px;
+  }
+   .new-arrivals h2 {
+    font-size: 32px;
+  }
+
+  .new-item img {
+    width: 120px;
+  }
+
+  .new-item h3 {
+    font-size: 18px;
+  }
+
+  .price {
+    font-size: 16px;
+  }
+  .new-look-content {
+    flex-direction: column; /* يخليهم تحت بعض */
+    text-align: center;
+  }
+
+  .new-look-text h2 {
+    font-size: 32px;
+  }
+
+  .new-look-text p {
+    font-size: 18px !important;
+  }
+
+  .new-look-images {
+    justify-content: center;
+  }
+
+  .new-look-images img {
+    width: 140px;
+  }
+  .latest h2 {
+    font-size: 32px;
+  }
+
+  .latest-desc {
+    font-size: 16px;
+  }
+
+  .product-card img {
+    width: 110px;
+  }
+
+  .testimonials h2 {
+    font-size: 32px;
+  }
+
+  .test-desc {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .testimonial-user img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .testimonial-user h4 {
+    font-size: 16px;
+  }
+
+  footer {
+    padding: 30px 15px;
+  }
+
+  footer .logo {
+    font-size: 24px;
+  }
+
+  footer nav a {
+    margin: 5px;
+    font-size: 16px;
+  }
+
+  footer .terms {
+    font-size: 12px;
+  }
+}
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .new-look-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .new-look-text h2 {
+    font-size: 36px;
+  }
+
+  .new-look-images img {
+    width: 140px;
+  }
+}
+/* Responsive للموبايل */
+@media (max-width: 768px) {
+  .testimonials h2 {
+    font-size: 32px;
+  }
+
+  .test-desc {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .testimonial-card img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .testimonial-card h4 {
+    font-size: 16px;
+  }
+
+  .comment {
+    font-size: 14px;
+  }
+}
